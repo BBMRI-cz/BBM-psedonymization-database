@@ -1,0 +1,32 @@
+Patients
+- ID
+- patient_id
+- patient_pseudo_id
+
+CREATE TABLE patients (
+    ID integer  NOT NULL DEFAULT nextval('table_name_id_seq'),
+    patient_ID varchar NOT NULL UNIQUE,
+    patient_pseudo_ID varchar NOT NULL UNIQUE,
+);
+
+Samples
+- ID
+- sample_ID
+- pseudo_sample_ID
+
+CREATE TABLE samples (
+    ID integer  NOT NULL DEFAULT nextval('table_name_id_seq'),
+    sample_ID varchar NOT NULL UNIQUE,
+    sample_pseudo_ID varchar NOT NULL UNIQUE,
+);
+
+Predictive
+- ID
+- predictive_number
+- pseudo_number
+
+CREATE TABLE predictive (
+    ID integer  NOT NULL DEFAULT nextval('table_name_id_seq'),
+    predictive_number varchar NOT NULL UNIQUE,
+    pseudo_number varchar NOT NULL UNIQUE,
+);
